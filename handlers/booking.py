@@ -53,7 +53,7 @@ async def choosing_time_handler(callback: CallbackQuery, state: FSMContext):
 
     await callback.message.answer(f"Проверьте данные заявки:\n\n"
                                   f"Услуга: {service}\n"
-                                  f"Дата: {date}\n:"
+                                  f"Дата: {date}\n"
                                   f"Время: {time}\n\n"
                                   f"Отправить заявку?", reply_markup=kb_confirm)
     await state.set_state(BookingState.confirming)
